@@ -1,9 +1,18 @@
 package String;
 
 public class ReverseAString {
-	public static void main(String[] args) {
+	public static void main(String[] args) 
+	{
 		
-		String name="madam";
+		stringCheck("MADAM");
+}
+		
+		
+			
+		public static void stringCheck(String name)
+		{
+		
+		
 		System.out.println(name);
 		
 		String reverse_name="";
@@ -14,7 +23,7 @@ public class ReverseAString {
 		}
 		System.out.println(reverse_name);
 		
-		if (reverse_name.equals(reverse_name))
+		if (reverse_name.equals(name))
 		{
 			System.out.println("Pallindrome");
 		}
@@ -22,6 +31,10 @@ public class ReverseAString {
 		{
 			System.out.println("Not Pallindrome");
 		}
+		
+		
+		
 	}
+	
 
 }
