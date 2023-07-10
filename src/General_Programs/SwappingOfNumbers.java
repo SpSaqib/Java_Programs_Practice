@@ -24,9 +24,12 @@ public class SwappingOfNumbers {
 		
 		//With using * and / without using third variable
 		
-		a=a*b;
-		b=a/b;
-		a=a/b;
+//		a=a*b;
+//		b=a/b;
+//		a=a/b;
+//		System.out.println("Value of a and b after swapping " +a+" and "+b);
+		
+		b=a+b-(a=b);
 		System.out.println("Value of a and b after swapping " +a+" and "+b);
 
 	}
