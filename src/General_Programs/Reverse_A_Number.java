@@ -7,32 +7,32 @@ public class Reverse_A_Number {
 		
 		pallindromeCheck(102);
 	}
-		public static void pallindromeCheck(int givenNumber)
+		public static void pallindromeCheck(int num)
 		{
 		
-		int reverseNumber=0;
+		int rev=0;
 		
-//		while(givenNumber!=0)
-//		{
-//			int reminder=givenNumber%10;
-//			reverseNumber=reverseNumber*10+reminder;
-//			givenNumber=givenNumber/10;
-//		}
-//		System.out.println(reverseNumber);
-//		if (givenNumber==reverseNumber)
-//		{
-//			System.out.println("Pallindrome");
-//		}
-//		else
-//		{
-//			System.out.println("N0t Pallindrome");
-//		}
-	
-		// Reverse a number
-		
-		StringBuffer sb=new StringBuffer(String.valueOf(givenNumber));
-		StringBuffer rev = sb.reverse();
+		while(num!=0)
+		{
+			rev=rev*10+num%10;
+			num=num/10;
+		}
 		System.out.println(rev);
+		if (num==rev)
+		{
+			System.out.println("Pallindrome");
+		}
+		else
+		{
+			System.out.println("N0t Pallindrome");
+		}
+	
+		// or Reverse a number from String Buffer
+		
+		
+		StringBuffer sb=new StringBuffer(String.valueOf(num));
+		StringBuffer rev1 = sb.reverse();
+		System.out.println(rev1);
 		
 	}
 

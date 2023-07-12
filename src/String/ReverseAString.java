@@ -15,15 +15,31 @@ public class ReverseAString {
 		
 		System.out.println(name);
 		
-		String reverse_name="";
+		String rev="";
+//		
+//		for(int i=name.length()-1;i>=0;i--)
+//		{
+//			rev=rev+name.charAt(i);
+//		}
 		
-		for(int i=name.length()-1;i>=0;i--)
-		{
-			reverse_name=reverse_name+name.charAt(i);
-		}
-		System.out.println(reverse_name);
+		// using character array
 		
-		if (reverse_name.equals(name))
+//		char a[]=name.toCharArray();
+//		
+//		for(int i=a.length-1;i>=0;i--)
+//		{
+//			rev=rev+a[i];
+//			
+//		}
+//		
+		// using String buffer
+		
+		StringBuffer sb=new StringBuffer(name);
+		
+		
+		System.out.println("Reverse a String : "+sb.reverse());
+		
+		if (rev.equals(name))
 		{
 			System.out.println("Pallindrome");
 		}
